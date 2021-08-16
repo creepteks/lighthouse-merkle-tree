@@ -9,7 +9,7 @@ class PoseidonHasher implements IHasher {
     private hashFunc: Function
 
     constructor() {
-        this.hashFunc = poseidon.createHash(3, 8, 57, 'poseidon')
+        this.hashFunc = poseidon
     }
 
     public hash(_, left, right) {

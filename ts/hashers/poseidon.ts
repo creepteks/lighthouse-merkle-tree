@@ -1,6 +1,6 @@
 import IHasher from './ihasher'
 import * as circomlib from 'circomlib'
-import * as snarkjs from 'snarkjs'
+const snarkjs = require('snarkjs')
 const poseidon = circomlib.poseidon
 
 const bigInt = snarkjs.bigInt;

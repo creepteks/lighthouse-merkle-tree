@@ -1,6 +1,6 @@
 import IHasher from './ihasher'
 import * as circomlib from 'circomlib'
-import * as snarkjs from 'snarkjs'
+const snarkjs = require('snarkjs')
 
 const mimc7 = circomlib.mimc7
 const bigInt = snarkjs.bigInt

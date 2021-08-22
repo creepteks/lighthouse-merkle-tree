@@ -1,9 +1,8 @@
 import IHasher from './ihasher'
 import * as circomlib from 'circomlib'
-const snarkjs = require('snarkjs')
 const poseidon = circomlib.poseidon
 
-const bigInt = snarkjs.bigInt;
+const bigInt = require('big-integer')
 
 class PoseidonHasher implements IHasher {
     private hashFunc: Function
